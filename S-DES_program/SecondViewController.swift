@@ -27,7 +27,7 @@
 
 /* 2021/12/06 async/await은 실패 -> 미리 값을 구해놓고 순차적으로 뿌려주는 형식으로 변경 - 완성
 
- * makeP10 - 10bit의 키를 P10의 순열로 치환하는 함수
+* makeP10 - 10bit의 키를 P10의 순열로 치환하는 함수
 * leftShift - 왼쪽으로 Shift해주는 함수
 * makeK - 8bit의 k값 생성해주는 함수
 
@@ -469,7 +469,7 @@ class SecondViewController: UIViewController {
             resultArr.append(arr[4])
             resultArr.append(arr[6])
                 
-        }else{ //한글일때 - 아직 구현 못함
+        }else{ //한글일때
             strBinary2 = make16(str: String(binary))
             for i in strBinary2{
                 arr.append(String(i))

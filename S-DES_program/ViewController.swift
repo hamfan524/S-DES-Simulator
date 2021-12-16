@@ -4,6 +4,9 @@
 //
 //  Created by 최동호 on 2021/11/21.
 //
+/* 2021/12/17 키값 입력 부분에서 오류 제어 수정
+ * solution - 문자열이 정수로 변환 가능한지 확인하는 함수*/
+
 /*
     S-DES(Simple-Data Encryption) Simulation
     
@@ -11,6 +14,7 @@
     오른쪽 아래에 ?를 누르면 간단한 설명이 있으며 Git에서 알아볼 수도 있음
  
  */
+
 import UIKit
 import Foundation
 
