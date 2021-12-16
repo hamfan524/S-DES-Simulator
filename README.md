@@ -1,5 +1,5 @@
 # S-DES-Simulator
-This is the S-DES simulator app for college students - information security project
+This is the S-DES simulator app for college students - information security project (버전 1.2.1)
 
 ![스크린샷 2021-12-06 오후 4 28 55](https://user-images.githubusercontent.com/37105602/144805116-e7bfc35c-5225-4efd-ac69-f9a0dd8d512f.png)
 
@@ -31,4 +31,9 @@ Xcode Version 13.1 (13A1030d)
 ```
 hamfan524@naver.com
 컴퓨터공학과 최동호
+```
+## 호환성
+```
+iPhoneX 모델 이상
+mini 시리즈 X
 ```
