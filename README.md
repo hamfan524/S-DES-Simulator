@@ -32,7 +32,7 @@ Xcode Version 13.1 (13A1030d)
 hamfan524@naver.com
 컴퓨터공학과 최동호
 ```
-## 호환
+## 호환기기
 ```
 iPhoneX 모델 이상
 mini 시리즈 X
