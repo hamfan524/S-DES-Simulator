@@ -25,7 +25,21 @@
 /* 2021/12/04 한글 문장까지 암호화, 복호화 구현 완료 */
 /* 2021/12/05 오류처리 try catch문 실패 -> 아쉽지만 if문으로 해결*/
 
-/* 2021/12/06 async/await은 실패 -> 미리 값을 구해놓고 순차적으로 뿌려주는 형식으로 변경 - 완성*/
+/* 2021/12/06 async/await은 실패 -> 미리 값을 구해놓고 순차적으로 뿌려주는 형식으로 변경 - 완성
+
+ * makeP10 - 10bit의 키를 P10의 순열로 치환하는 함수
+* leftShift - 왼쪽으로 Shift해주는 함수
+* makeK - 8bit의 k값 생성해주는 함수
+
+* makeIp - 평문(8bit) IP의 순서로 치환 (한글일 시 16bit
+* makefk - 키값을 넣어 fk로 변환해주는 함수
+* xor - xor연산 해주는 함수
+* sBox -  SBOX 함수
+* makeSwitch - switch 해주는 함수
+* makeToStr - 유니코드를 문자열로 변환 해주는 함수
+* make16 - 문자열을 16자리로 변환 해주는 함수
+* run - 암호화와 복호화 시작하는 함수
+ */
 
 import UIKit
 import Foundation
@@ -276,7 +290,6 @@ class SecondViewController: UIViewController {
             
                 fk_2 = makefk(str: s, k: k_2)
 
-            
                 Ip_ = makeIp2(str: fk_2)
            
                 for j in save{
@@ -629,7 +642,6 @@ class SecondViewController: UIViewController {
         
         var ff : [String] = []
         var st : [String] = []
-        
        
         ff.append(str[0])
         ff.append(str[3])

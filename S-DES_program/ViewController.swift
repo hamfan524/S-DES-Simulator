@@ -12,6 +12,7 @@
  
  */
 import UIKit
+import Foundation
 
 class ViewController: UIViewController {
     
@@ -45,6 +46,13 @@ class ViewController: UIViewController {
                 present(alert, animated: true, completion: nil)
                 
                 
+            }
+            else if solution(keyText.text!) == false{
+                let alert = UIAlertController(title: "키 값은 숫자만 입력할 수 있습니다.", message: "", preferredStyle: UIAlertController.Style.alert)
+                let okAction = UIAlertAction(title: "OK", style: UIAlertAction.Style.default, handler: nil)
+                
+                alert.addAction(okAction)
+                present(alert, animated: true, completion: nil)
             }else if Int(keyText.text!)! < 0 || Int(keyText.text!)! > 1023{
                 let alert = UIAlertController(title: "키 값이 범위를 벗어났습니다.", message: "", preferredStyle: UIAlertController.Style.alert)
                 let okAction = UIAlertAction(title: "OK", style: UIAlertAction.Style.default, handler: nil)
@@ -61,7 +69,10 @@ class ViewController: UIViewController {
             }
         }
     
+    func solution(_ s: String) -> Bool{
+        let filter = s.filter { (number) -> Bool in Int(String(number)) == nil}
+               return filter.count > 0 ? false : true
+    }
 
-    
 }
 
